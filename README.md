@@ -25,6 +25,7 @@ To run test you need to go to `/_tests`.
 - modules/tests/assertions/invalid_object
 - modules/tests/assertions/not_presence
 - modules/tests/assertions/not_valid_object
+- modules/tests/assertions/object_contains_object
 - modules/tests/assertions/presence
 - modules/tests/assertions/valid_object
 
