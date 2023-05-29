@@ -6,6 +6,6 @@ layout: modules/tests/test
   if context.environment == 'staging' or context.environment == 'development'
     function mail = 'modules/tests/queries/sent_mails/find', id: context.params.id
 
-    render 'modules/tests/tests/sent_mails_show', mail: mail
+    render 'modules/tests/sent_mails/show', mail: mail
   endif
 %}

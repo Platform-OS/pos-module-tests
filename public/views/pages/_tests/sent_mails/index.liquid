@@ -5,6 +5,6 @@ layout: modules/tests/test
   if context.environment == 'staging' or context.environment == 'development'
     function mails = 'modules/tests/queries/sent_mails/search', limit: 20
 
-    render 'modules/tests/tests/sent_mails_list', mails: mails
+    render 'modules/tests/sent_mails/list', mails: mails
   endif
 %}
