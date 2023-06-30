@@ -1,7 +1,9 @@
 {% liquid
   hash_assign contract['total'] = contract['total'] | plus: 1
   unless object[field_name] == blank
-    function contract = 'modules/tests/helpers/register_error', contract: contract, field_name: field_name, key: 'test.should.be_blank'
+
+      assign message = message_blank | default: 'modules/core/validation.length.blank' | t
+    function contract = 'modules/tests/helpers/register_error', contract: contract, field_name: field_name, key: 'modules/tests/should.be_blank'
   endunless
   return contract
 %}

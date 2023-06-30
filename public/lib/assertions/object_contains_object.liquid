@@ -6,11 +6,11 @@
     assign value = property[1]
 
     if given[key] == blank
-      assign message = 'test.should.have_key' | t: field_name: field_name
+      assign message = 'modules/tests/should.have_key' | t: field_name: field_name
       function contract = 'test/register_error_f', contract: contract, field_name: key, message: message
     else
       if given[key] != value
-        assign message = 'test.should.have_key_with_value' | t: value: value
+        assign message = 'modules/tests/should.have_key_with_value' | t: value: value
         function contract = 'test/register_error_f', contract: contract, field_name: key, message: message
       endif
     endif
