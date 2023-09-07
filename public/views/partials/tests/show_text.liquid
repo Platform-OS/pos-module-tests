@@ -14,7 +14,7 @@ Liquid tests
     assign result = 'Success'
   endif
 %}
-{{result}}_{{test_name | strip }}
+{{ result }}_{{ test_name | strip }}
 {% if total_errors > 0 %}
   Total errors: {{ total_errors }}
 {% endif %}
