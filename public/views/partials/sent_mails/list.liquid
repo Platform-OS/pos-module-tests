@@ -12,7 +12,7 @@
         <li>{{ mail.options.subject }}</li>
         <li>{{ mail.options.to | join: ',' }}</li>
         <li>{{ mail.created_at | l }}</li>
-        <li><a href="/tests/sent_mails/{{ mail.id }}">Show</a></li>
+        <li><a href="/_tests/sent_mails/{{ mail.id }}">Show</a></li>
       </ul>
     {% endfor %}
   </div>
