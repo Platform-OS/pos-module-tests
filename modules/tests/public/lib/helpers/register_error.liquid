@@ -7,6 +7,8 @@
 {% endcomment %}
 
 {% liquid
+  assign key = key | default: null
+  assign message = message | default: null
   if key
     assign msg = key | t
   else
