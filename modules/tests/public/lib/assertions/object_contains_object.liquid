@@ -1,7 +1,7 @@
 {% liquid
   hash_assign contract['total'] = contract['total'] | plus: 1
 
-  for property in contains
+  for property in object_contains
     assign key = property[0]
     assign value = property[1]
 
