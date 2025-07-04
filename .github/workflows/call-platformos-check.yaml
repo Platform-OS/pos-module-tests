@@ -1,4 +1,4 @@
-name: Run platformos-check on Liquid files
+name: Run platformos-check on Liquid files - TEST
 on:
   push:
     paths-ignore:
