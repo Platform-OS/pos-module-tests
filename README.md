@@ -3,6 +3,27 @@
 The goal of this module is allow to write and run tests in liquid.
 It can also test sent mails.
 
+## Installation
+
+The platformOS Tests Module is available on the [Partner Portal Modules Marketplace](https://partners.platformos.com/marketplace/pos_modules/130).
+
+### Prerequisites
+
+Before installing the module, please ensure you have [pos-cli](https://github.com/mdyd-dev/pos-cli#overview) installed. This tool is essential for managing and deploying platformOS projects.
+
+### Installation Steps
+
+1. **Navigate to your project directory** where you want to install the Tests Module.
+
+2. **Run the installation command**:
+
+```bash
+   pos-cli modules install tests
+   pos-cli modules download tests
+```
+
+This command installs the Tests Module and updates or creates the `app/pos-modules.json` file in your project directory to track module configurations.
+
 ## Testing liquid functions
 
 Put your test file in `app/lib/tests/`. File name should end with `_test.liquid`, ex. `app/lib/tests/some_command_test.liquid`.
