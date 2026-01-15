@@ -6,7 +6,9 @@
   graphql tests = 'modules/tests/test_files/search', path: context.params.name | dig: "admin_liquid_partials" | dig: "results"
 
   if tests.size == 0
-    echo 'no tests found'
+    unless format == 'js'
+      echo 'no tests found'
+    endunless
   endif
   assign total_errors = 0
   assign contracts = '' | split: ','

@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(pos-cli deploy:*)",
+      "Bash(curl:*)",
+      "Bash(pos-cli env list:*)",
+      "Bash(pos-cli logs:*)"
+    ]
+  }
+}
