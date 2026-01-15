@@ -1,7 +1,7 @@
 {% liquid
   assign ctx = context
   hash_assign ctx['tests'] = true
-  log 'Starting unit tests'
+  log 'Starting unit tests', type: test_name
   assign __start = "now" | to_time
   assign per_page = 100
   graphql total_pages = 'modules/tests/test_files/count', per_page: per_page, path: context.params.name | dig: "admin_liquid_partials" | dig: "total_pages"
@@ -17,7 +17,7 @@
   for page in (1..total_pages)
     graphql tests = 'modules/tests/test_files/search', path: context.params.name, page: page, per_page: per_page | dig: "admin_liquid_partials" | dig: "results"
     for test in tests
-      log test, type: "test:"
+      log test, type: test_name
       assign contract = '{ "errors": {}, "success": true, "total": 0 }' | parse_json
 
       # platformos-check-disable ConvertIncludeToRender

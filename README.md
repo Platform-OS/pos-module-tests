@@ -320,6 +320,10 @@ This command:
 - Polls the logs for test results
 - Exits with code 0 if all tests pass, or non-zero if any tests fail
 
+### Log Types and pos-cli Display
+
+Starting from version 1.2.0, logs generated during test runs use a unique test name as their type, making it easier for pos-cli to identify and display test results.
+
 ### Running Specific Tests
 
 ```bash
